@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    background-image: url(fond.jpg);
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Colonne pour empiler les éléments */
+    justify-content: flex-start; /* Place les éléments en haut de la page */
+    align-items: center;
+    height: 100vh; /* Pleine hauteur d'écran */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px; /* Ajuste l'espace en haut de la page */
+}
+
+@font-face {
+    font-family: 'Objective';
+    src: url('Objective-Black.otf') format('truetype'); /* Format TTF */
+}
+@font-face {
+    font-family: 'ObjectiveL';
+    src: url('Objective-Light.otf') format('truetype'); /* Format TTF */
+}
+
+/* Profil Section */
+.personne {
+    margin-bottom: 20px; /* Espace sous la photo */
+}
+
+#photoprofil {
+    width: 120px; /* Taille plus grande pour la photo */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre légère */
+}
+
+#nom {
+    margin-top: 10px;
+    font-family: 'Objective', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 
+        2px 2px 0px rgb(49, 47, 47),  /* Bordure blanche */
+        -1px -1px 0px rgb(49, 47, 47)   , 
+        -1px 1px 0px rgb(49, 47, 47), 
+        1px -1px 0px rgb(49, 47, 47)    ;
+}
+
+/* Links Section */
+.container {
+    display: flex;
+    flex-direction: column; /* Aligne les liens verticalement */
+    gap: 20px; /* Espacement entre les liens */
+}
+
+.lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 60px; /* Dimensions plus grandes pour les boutons */
+    font-family: 'ObjectiveL', Arial, sans-serif;
+    font-size: 18px; /* Taille du texte plus grande */
+    color: white;
+    text-decoration: none; /* Supprime le soulignement */
+    background-image: url(fond\ bouton.webp);
+    background-size: cover;
+    border-radius: 25px; /* Coins plus arrondis */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 180px; /* Largeur minimale augmentée */
+}
+
+.lien:hover {
+    background-size: 105%;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+    transform: scale(1.1); /* Effet zoom plus prononcé */
+}
+
+/* Menu déroulant */
+.menu {
+    position: absolute; /* Positionne le menu en haut à gauche */
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* S'assure que le menu soit au-dessus des autres éléments */
+}
+
+.menu-icon {
+    width: 40px; /* Taille de l'image (ajustez selon votre image) */
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+/* Contenu du menu déroulant */
+.dropdown-content {
+    display: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'ObjectiveL', Arial, sans-serif;
+    color: white;
+    position: absolute;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+
+/* Affiche le menu quand on survole l'icône */
+.menu:hover .dropdown-content {
+    display: block;
+}
