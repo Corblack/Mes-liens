@@ -41,12 +41,12 @@ body {
     font-family: 'Objective', Arial, sans-serif;
     font-size: 40px;
     font-weight: bold;
-    color: black;
+    color: rgb(114, 22, 189);
     text-shadow: 
-        2px 2px 0px rgb(49, 47, 47),  /* Bordure blanche */
-        -1px -1px 0px rgb(49, 47, 47)   , 
-        -1px 1px 0px rgb(49, 47, 47), 
-        1px -1px 0px rgb(49, 47, 47)    ;
+        2px 2px 0px rgb(47, 20, 121),  /* Bordure blanche */
+        -1px -1px 0px rgb(47, 20, 121)   , 
+        -1px 1px 0px rgb(47, 20, 121), 
+        1px -1px 0px rgb(47, 20, 121)    ;
 }
 
 /* Links Section */
@@ -65,7 +65,7 @@ body {
     font-size: 18px; /* Taille du texte plus grande */
     color: white;
     text-decoration: none; /* Supprime le soulignement */
-    background-image: url(fond\ bouton.webp);
+    background-image: url('fond_bouton_violet_copie.jpg');
     background-size: cover;
     border-radius: 25px; /* Coins plus arrondis */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
