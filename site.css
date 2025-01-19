@@ -88,6 +88,7 @@ body {
 }
 
 .menu-icon {
+    filter: invert(1);
     width: 40px; /* Taille de l'image (ajustez selon votre image) */
     height: 40px;
     cursor: pointer;
